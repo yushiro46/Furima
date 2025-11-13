@@ -16,18 +16,25 @@ Dockerビルド
 6 docker-compose up -d --build
 
 Laravel環境構築
-1　docker-compose exec php bash
+
+1docker-compose exec php bash
 
 2 composer install
 
 3 「.env.example」ファイルを　「.env」ファイルに命名を変更。または、新しく.envファイルを作成
 
 4 .envに以下の環境変数を追加
+
 DB_CONNECTION=mysql
+
 DB_HOST=mysql
+
 DB_PORT=3306
+
 DB_DATABASE=laravel_db
+
 DB_USERNAME=laravel_user
+
 DB_PASSWORD=laravel_pass
 
 5 アプリケーションキーの作成
@@ -49,8 +56,11 @@ php artisan db:seed
 ![ER図](er.png)
 
 ## 開発環境
+
 ・商品一覧画面： http://localhost/
+
 ・ログイン画面： http://localhost/login
+
 ・phpMyAdmin： http://localhost:8080/
 
 
