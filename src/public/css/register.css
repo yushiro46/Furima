@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: #000000;
+}
+
+.header-left {
+    width: 370px;
+    height: 36px;
+    margin-top: 22px;
+    margin-left: 25px;
+}
+
+/* フォーム全体の箱 */
+.register-container {
+    width: 680px;
+    margin: 60px auto 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 見出し */
+.register-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* フォーム本体 */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 各項目 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* 入力欄 */
+.form-input {
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 登録ボタン */
+.form-button {
+    margin-top: 25px;
+}
+
+.register-submit {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF5555;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* 「ログインはこちら」部分 */
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* 枠線なし・色 #0073CC のテキストリンク */
+.login-link__text {
+    color: #0073CC;
+    font-size: 16px;
+    text-decoration: none;
+    /* 下線なし */
+    border: none;
+    /* 周りの枠線なし */
+    background: transparent;
+}
+
+/* ちょっとだけホバー時に色変えたい場合 */
+.login-link__text:hover {
+    text-decoration: underline;
+}
+
+.form__error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
