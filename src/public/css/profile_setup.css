@@ -1,0 +1,99 @@
+/* 全体コンテナ */
+.profile-settings-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 60px auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 見出し */
+.profile-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* フォーム全体 */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 各項目ブロック */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* ラベル */
+.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* 入力欄共通 */
+.form-input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #5F5F5F;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* ユーザーネームの表示（編集不可の見た目用） */
+.readonly-text {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* アイコン選択エリア */
+.icon-select {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* アイコンプレビュー */
+.icon-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* デフォルト（アイコン未設定）の丸 */
+.icon-preview--placeholder {
+    background-color: #C4C4C4;
+}
+
+/* ファイル入力 */
+.icon-input {
+    font-size: 14px;
+}
+
+/* 更新ボタン */
+.update-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    opacity: 0.9;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}

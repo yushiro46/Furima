@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COACHTECHフリマ</title>
         <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/guest.css') }}">
         @yield('css')
 </head>
 
@@ -24,7 +24,10 @@
         </div>
 
         <div class="header-right">
-            <a href="/login" class="login-btn">ログイン</a>
+            <form action="/logout" method="post">
+                @csrf
+                <button class="logout-btn">ログアウト</button>
+            </form>
             <a href="/mypage" class="mypage-btn">マイページ</a>
             <a href="/sell" class="sell-btn">出品</a>
         </div>

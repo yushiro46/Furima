@@ -1,0 +1,89 @@
+/* 全体 */
+.profile-settings-container {
+    width: 100%;
+    max-width: 680px;
+    margin: 60px auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 見出し */
+.profile-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* フォーム */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 各項目 */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* ラベル */
+.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* 入力欄（指定サイズ） */
+.form-input {
+    width: 680px;
+    height: 55px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #5F5F5F;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* アイコン選択 */
+.icon-select {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon-preview--placeholder {
+    background-color: #C4C4C4;
+}
+
+.icon-input {
+    font-size: 14px;
+}
+
+/* 更新ボタン（指定サイズ） */
+.update-btn {
+    margin-top: 30px;
+    width: 680px;
+    height: 60px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    opacity: 0.9;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}

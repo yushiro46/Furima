@@ -59,6 +59,12 @@
                     <input class="form-input" type="password" id="password_confirmation" name="password_confirmation">
                 </div>
 
+                <div class="form__error">
+                    @error('password')
+                    {{ $message }}
+                    @enderror
+                </div>
+
                 <div class="form-button">
                     <button class="register-submit" type="submit">登録する</button>
                 </div>

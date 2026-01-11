@@ -1,0 +1,103 @@
+.item-show {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.item-show__image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.item-show__info {
+    flex: 1;
+}
+
+.item-show__name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item-show__brand {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.item-show__price {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #e60023;
+}
+
+.item-show__icons {
+    display: flex;
+    gap: 16px;
+    margin: 15px 0;
+}
+
+.icon-heart,
+.icon-comment {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.purchase-btn {
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.item-show__description,
+.item-show__details {
+    margin-top: 30px;
+}
+
+.item-show__category-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 6px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.item-show__comment-area {
+    margin-top: 40px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: none;
+}
+
+.comment-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #3490dc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}

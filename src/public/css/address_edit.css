@@ -1,0 +1,102 @@
+body {
+    position: relative;
+}
+
+/* タイトル */
+.title {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 44px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+/* ラベル共通 */
+.form-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ラベル位置 */
+.form-label:nth-of-type(1) {
+    top: 270px;
+    /* 郵便番号ラベル */
+}
+
+.form-label:nth-of-type(2) {
+    top: 420px;
+    /* 住所ラベル */
+}
+
+.form-label:nth-of-type(3) {
+    top: 590px;
+    /* 建物名ラベル */
+}
+
+/* 入力欄共通 */
+.form-input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+    height: 45px;
+    padding: 10px;
+    background-color: #ffffff;
+    /* ← 白い背景を付ける */
+    border: 1px solid #5F5F5F;
+    /* ← 濃いめの枠線 */
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* input の位置 */
+.input-postal {
+    top: 311px;
+}
+
+.input-address {
+    top: 460px;
+}
+
+.input-building {
+    top: 631px;
+}
+
+/* 更新ボタン */
+.update-btn {
+    position: absolute;
+    top: 787px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #3490dc;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* hover */
+.update-btn:hover {
+    background-color: #2779bd;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}

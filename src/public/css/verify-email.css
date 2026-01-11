@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: #000000;
+}
+
+.header-left {
+    width: 370px;
+    height: 36px;
+    margin-top: 22px;
+    margin-left: 25px;
+}
+
+/* 本文 */
+.verify {
+    max-width: 520px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.verify__message {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    color: #333;
+}
+
+/* 「認証はこちらから」ボタン（aタグをボタン風に） */
+.verify__primary-btn {
+    width: 220px;
+    height: 44px;
+    border: none;
+    border-radius: 6px;
+    background: #ff4d4d;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+
+    /* aタグ対策 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* 中央寄せ */
+    text-decoration: none;
+    /* 下線消す */
+}
+
+/* 再送（文字だけボタン） */
+.verify__resend-btn {
+    margin-top: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #0070f3;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* 再送完了メッセージ */
+.verify__status {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #2e7d32;
+}

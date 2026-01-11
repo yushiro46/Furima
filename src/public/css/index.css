@@ -1,0 +1,175 @@
+.toppage-list {
+    width: 100%;
+    margin-top: 127px;
+
+    display: flex;
+    align-items: flex-end;
+
+    /* ← 左から129px離す */
+    padding-left: 129px;
+
+    /* ← 文字の間隔 */
+    gap: 207px;
+
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5F5F5F;
+}
+
+.tab-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    color: #5F5F5F;
+    text-decoration: none;
+    /* ← 下線消す */
+
+    appearance: none;
+}
+
+.tab-btn.active {
+    color: #FF0000;
+}
+
+.item-list {
+    width: 1374.52px;
+    /* コンテナ幅 */
+    margin: 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 横に並べて折り返し */
+    gap: 30px;
+    /* カード間隔 */
+    justify-content: center;
+    /* 中央揃え */
+}
+
+.item-card {
+    width: 290px;
+    /* カード幅 */
+    height: 320px;
+    /* カード高さ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card__link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    /* 下線削除 */
+}
+
+.item-card__image-wrapper {
+    width: 100%;
+    height: 240px;
+    /* 画像の高さ */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.item-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.item-card__image-wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item-card__name {
+    margin-top: 12px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    word-break: break-all;
+    line-height: 1.2;
+    height: 40px;
+    /* 名前の表示領域 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* アイテム間の間隔 */
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ページ番号・矢印 */
+.pagination a,
+.pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    /* 丸くする */
+
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #C0C0C0;
+    background: #fff;
+}
+
+/* 現在のページ (active) */
+.pagination .active span {
+    background-color: #FF0000;
+    /* メルカリ赤 */
+    color: #fff;
+    border-color: #FF0000;
+}
+
+/* 無効（disabled） */
+.pagination .disabled span {
+    background: #F0F0F0;
+    color: #999;
+    border-color: #C0C0C0;
+}
+
+.item-card__image-wrapper {
+    position: relative;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 0, 0, 0.9);
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
